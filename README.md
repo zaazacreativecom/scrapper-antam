@@ -14,8 +14,6 @@ Web scraper sederhana untuk mengambil data harga emas batangan ANTAM secara real
 
 - **Node.js** - Runtime environment
 - **Puppeteer** - Headless browser automation
-- **Axios** - HTTP client (alternatif)
-- **Cheerio** - HTML parser (alternatif)
 
 ## 📋 Prerequisites
 
@@ -26,8 +24,8 @@ Web scraper sederhana untuk mengambil data harga emas batangan ANTAM secara real
 
 1. Clone repository ini:
 ```bash
-git clone https://github.com/username/scraping-emas.git
-cd scraping-emas
+git clone https://github.com/zaazacreative/scrapper-antam.git
+cd scrapper-antam
 ```
 
 2. Install dependencies:
@@ -37,7 +35,13 @@ npm install
 
 ## 💻 Cara Penggunaan
 
-Jalankan script dengan perintah:
+### Menggunakan npm scripts:
+
+```bash
+npm start
+```
+
+### Atau menjalankan langsung:
 
 ```bash
 node scraper-antam-puppeteer.js
@@ -75,10 +79,11 @@ node scraper-antam-puppeteer.js
 ## 📁 Struktur File
 
 ```
-scraping-emas/
-├── scraper-antam-puppeteer.js  # Script utama (Puppeteer)
-├── scraper-antam.js            # Script alternatif (Axios + Cheerio)
+scrapper-antam/
+├── scraper-antam-puppeteer.js  # Script scraper
 ├── package.json
+├── LICENSE
+├── .gitignore
 └── README.md
 ```
 
@@ -101,11 +106,6 @@ if (count >= 12) return; // Ganti 12 dengan jumlah yang diinginkan
 ```
 
 ## 🔧 Troubleshooting
-
-### Error 403 Forbidden
-
-Jika menggunakan `scraper-antam.js` (Axios), Anda mungkin mendapat error 403 karena proteksi anti-bot. Solusinya:
-- Gunakan `scraper-antam-puppeteer.js` yang menggunakan browser headless
 
 ### Error: Chromium not found
 
@@ -132,21 +132,6 @@ await page.goto(URL, {
 - ⚠️ Gunakan dengan bijak dan jangan overload server
 - ⚠️ Data harga dapat berubah sewaktu-waktu
 
-## 🔄 Alternatif
-
-Project ini menyediakan 2 versi scraper:
-
-1. **Puppeteer** (`scraper-antam-puppeteer.js`) - ✅ Recommended
-   - ✅ Bypass anti-bot protection
-   - ✅ Lebih reliable
-   - ❌ Lebih lambat (5-10 detik)
-   - ❌ Resource lebih besar
-
-2. **Axios + Cheerio** (`scraper-antam.js`)
-   - ✅ Lebih cepat
-   - ✅ Resource lebih ringan
-   - ❌ Rentan error 403
-
 ## 🤝 Kontribusi
 
 Kontribusi selalu welcome! Silakan:
@@ -172,5 +157,3 @@ Berikan ⭐️ jika project ini membantu Anda!
 ---
 
 **Disclaimer:** Project ini dibuat untuk tujuan edukasi. Pengguna bertanggung jawab atas penggunaan script ini sesuai dengan hukum dan peraturan yang berlaku.
-# scrapper-antam
-# scrapper-antam

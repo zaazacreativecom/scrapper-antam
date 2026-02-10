@@ -8,7 +8,6 @@
   "main": "scraper-antam-puppeteer.js",
   "scripts": {
     "start": "node scraper-antam-puppeteer.js",
-    "start:axios": "node scraper-antam.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -18,18 +17,17 @@
     "harga-emas",
     "antam",
     "puppeteer",
-    "cheerio",
     "logam-mulia",
     "indonesia"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/username/scraping-emas.git"
+    "url": "https://github.com/zaazacreative/scrapper-antam.git"
   },
   "bugs": {
-    "url": "https://github.com/username/scraping-emas/issues"
+    "url": "https://github.com/zaazacreative/scrapper-antam/issues"
   },
-  "homepage": "https://github.com/username/scraping-emas#readme",
+  "homepage": "https://github.com/zaazacreative/scrapper-antam#readme",
   "engines": {
     "node": ">=14.0.0"
   },
